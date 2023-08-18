@@ -2,15 +2,15 @@
 name = "demo_category_selection"
 version = "0.0.0"
 description = "demo_category_selection"
-authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
+authors = ["Sierra Moxon <smoxon@lbl.gov>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10.1"
-click = "*"
-importlib-metadata = "^4.8.0"
 poetry-dynamic-versioning = "^1.0.0"
+bmt = "^1.1.1"
+oaklib = "^0.5.15"
 
 [tool.poetry.group.dev.dependencies]
 pytest = {version = ">=7.1.2"}
@@ -28,7 +28,7 @@ sphinx-click = {version = ">=4.3.0"}
 myst-parser = {version = ">=0.18.1"}
 
 [tool.poetry.scripts]
-demo_category_selection = "{{ cookiecutter.project_name|lower()|replace(' ', '_')|replace('-', '_') }}.cli:main"
+demo_category_selection = "demo_category_selection.cli:main"
 
 [tool.poetry-dynamic-versioning]
 enable = true
